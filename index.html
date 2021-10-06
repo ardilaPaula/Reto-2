@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto2</title>
+
+</head>
+<body>
+    <header>
+        <h1>Reto 2</h1>
+    </header>
+    <section class="Room">
+        <h2>Room</h2>
+        <div>
+            <div id="resultadoRoom"></div>
+            <button onclick="getDatosRoom()"> Consultar </button>
+
+        
+        
+    </div>
+    <div>
+        <div>
+            <input type="number" id="id" placeholder="id">
+            <input type="text" id="room" placeholder="room">
+            <input type="number" id="stars" placeholder="stars">
+            <input type="number" id="category_id" placeholder="category_id">
+            <input type="text" id="description" placeholder="description">
+        </div>
+        <button onclick="guardarRoom()">Guardar!</button>
+        <button onclick="editarRoom()">Actualizar!</button>
+    </div>
+    </section>
+    <section class="Client">
+        <h2>Client</h2>
+        <div>
+            <div id="resultadoClient"></div>
+            <button onclick="getDatosClient()"> Consultar </button>
+
+        
+    </div>
+    <div>
+        <div>
+            <input type="number" id="id_client" placeholder="id">
+            <input type="text" id="name" placeholder="name">
+            <input type="text" id="email" placeholder="email">
+            <input type="number" id="age" placeholder="age">
+        </div>
+        <button onclick="guardarClient()">Guardar!</button>
+        <button onclick="editarClient()">Actualizar!</button>
+    </div>
+    </section>
+    <section class="Message">
+        <h2>Message</h2>
+        <div>
+            <div id="resultadoMessage"></div>
+            <button onclick="getDatosMessage()"> Consultar </button>
+
+        
+    </div>
+    <div>
+        <div>
+            <input type="number" id="id_message" placeholder="id">
+            <input type="text" id="messagetext" placeholder="message">
+        </div>
+        <button onclick="guardarMessage()">Guardar!</button>
+        <button onclick="editarMessage()">Actualizar!</button>
+    </div>
+    </section>
+</body>
+</html>
+<script type="text/javascript" src="js/client.js"></script>
+<script type="text/javascript" src="js/room.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
